@@ -1,0 +1,36 @@
+//加载资源包
+string Path = “ab包地址”;
+UnityWebRequest WebRequest= UnityWebRequestAssetBundle.GetAssetBundle(Path);
+yield return WebRequest.SendWebRequest();
+if (WebRequest.isNetworkError)
+{
+}
+else
+ {
+AssetBundle ab=DownloadHandlerAssetBundle.GetContent(WebRequest);//加载完成
+}
+
+//场景加载
+string url = @“场景ab包地址”;
+        UnityWebRequest request1 = UnityWebRequestAssetBundle.GetAssetBundle(url);
+        yield return request1.SendWebRequest();
+        if (request1.isNetworkError)
+        {
+          //失败
+        }
+        else
+        {
+            if (GlobalData.Instance.CaoZuoScene == null)
+            {
+                GlobalData.Instance.CaoZuoScene = DownloadHandlerAssetBundle.GetContent(request1);
+            }
+            Main_operation = SceneManager.LoadSceneAsync("MainScene");
+            Main_operation.allowSceneActivation = false;
+            while (!Main_operation.isDone)
+            {
+if（资源全部加载完成）
+               Main_operation.allowSceneActivation = true;//允许跳转
+                yield return null;
+            }
+
+        }
