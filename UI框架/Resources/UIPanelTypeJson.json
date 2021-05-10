@@ -1,0 +1,64 @@
+{
+	"panelInfoList": [
+		{
+			"panelType": "StartPanel",
+			"path": "UIPanel/StartPanel"
+		},
+		{
+			"panelType": "SelectPatternPanel",
+			"path": "UIPanel/SelectPatternPanel"
+		},
+		{
+			"panelType": "SelectPaperPanel",
+			"path": "UIPanel/SelectPaperPanel"
+		},
+		{
+			"panelType": "SelectFontPanel",
+			"path": "UIPanel/SelectFontPanel"
+		},
+		{
+			"panelType": "SelectContentPanel",
+			"path": "UIPanel/SelectContentPanel"
+		},
+		{
+			"panelType": "WritePanel",
+			"path": "UIPanel/WritePanel"
+		},
+		{
+			"panelType": "analysePanel",
+			"path": "UIPanel/analysePanel"
+		},
+		{
+			"panelType": "InitWritePanel",
+			"path": "UIPanel/InitWritePanel"
+		},
+		{
+			"panelType": "LoadingPanel",
+			"path": "UIPanel/LoadingPanel"
+		},
+		{
+			"panelType": "DoubleFinshPanel",
+			"path": "UIPanel/DoubleFinshPanel"
+		},
+		{
+			"panelType": "DetectionBodyPanel",
+			"path": "UIPanel/DetectionBodyPanel"
+		},
+		{
+			"panelType": "DoublePatternPanel",
+			"path": "UIPanel/DoublePatternPanel"
+		},
+		{
+			"panelType": "SinglePatternPanel",
+			"path": "UIPanel/SinglePatternPanel"
+		},
+		{
+			"panelType": "DoubleDetectionBodyPanel",
+			"path": "UIPanel/DoubleDetectionBodyPanel"
+		},
+		{
+			"panelType": "TeachingPanel",
+			"path": "UIPanel/TeachingPanel"
+		}
+	]
+}
